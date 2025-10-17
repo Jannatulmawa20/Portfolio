@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jannatul Mawa | Data Science & CSE Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #ef4444; /* Tailwind red-500 */
+            border-radius: 9999px;
+        }
+        .project-card {
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Mobile adjustments for header nav */
+        @media (max-width: 640px) {
+            nav a {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.875rem; /* text-sm */
+            }
+        }
+    </style>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white text-3xl font-bold flex-shrink-0">
+                    JM
+                </div>
+                <div class="text-center sm:text-left">
+                    <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">JANNATUL MAWA</h1>
+                    <p class="text-lg text-gray-500">Computer Science Graduate | Data Science Enthusiast</p>
+                </div>
+            </div>
+            <nav class="mt-4 sm:mt-0 space-x-3 sm:space-x-6 flex flex-wrap justify-center">
+                <a href="#profile" class="text-gray-600 hover:text-red-500 transition duration-300 font-medium">Profile</a>
+                <a href="#skills" class="text-gray-600 hover:text-red-500 transition duration-300 font-medium">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-red-500 transition duration-300 font-medium">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-red-500 transition duration-300 font-medium">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-500 transition duration-300 font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Profile Section -->
+        <section id="profile" class="mb-16 p-8 bg-white rounded-xl shadow-lg">
+            <h2 class="section-header text-2xl font-bold text-gray-900">About Me</h2>
+            <p class="text-gray-600 leading-relaxed">
+                A motivated and eager Computer Science graduate with a Bachelor of Science in CSE, seeking to gain practical experience in software development, database, networking, and IT support. Strong theoretical foundation in programming, algorithms, and database management. Passionate about applying academic knowledge to real-world applications and enhancing technical skills professionally.
+            </p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm font-medium">
+                <div class="flex items-center space-x-2 text-gray-600">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+                    <span>Dhaka-1212, Bangladesh</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600">
+                    <i data-lucide="phone" class="w-5 h-5 text-red-500"></i>
+                    <span>+880 1826-708635</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-600">
+                    <i data-lucide="mail" class="w-5 h-5 text-red-500"></i>
+                    <a href="mailto:mawamukta1234@gmail.com" class="hover:underline">mawamukta1234@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="section-header text-2xl font-bold text-gray-900">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Programming & Tech -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="flex items-center text-xl font-semibold mb-3 text-red-500">
+                        <i data-lucide="code" class="w-5 h-5 mr-2"></i>
+                        Programming & Web
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="p-1 rounded-md bg-red-50/50">C, Java (OOP), Python (Pandas, NumPy)</li>
+                        <li class="p-1 rounded-md bg-red-50/50">HTML, CSS, Django</li>
+                        <li class="p-1 rounded-md bg-red-50/50">MySQL</li>
+                    </ul>
+                </div>
+                
+                <!-- Machine Learning & Data -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="flex items-center text-xl font-semibold mb-3 text-red-500">
+                        <i data-lucide="bar-chart-3" class="w-5 h-5 mr-2"></i>
+                        Data Science & ML
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="p-1 rounded-md bg-red-50/50">Supervised & Unsupervised Learning, Clustering</li>
+                        <li class="p-1 rounded-md bg-red-50/50">Scikit-learn, Statistics, Model Evaluation</li>
+                        <li class="p-1 rounded-md bg-red-50/50">Matplotlib, PyTorch, TensorFlow, OpenCV</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="flex items-center text-xl font-semibold mb-3 text-red-500">
+                        <i data-lucide="tool" class="w-5 h-5 mr-2"></i>
+                        Tools & Platforms
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="p-1 rounded-md bg-red-50/50">AWS, Cloud Computing</li>
+                        <li class="p-1 rounded-md bg-red-50/50">Figma, Adobe Photoshop, Illustrator</li>
+                        <li class="p-1 rounded-md bg-red-50/50">Cisco Packet Tracer, Kali Linux, VirtualBox</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="section-header text-2xl font-bold text-gray-900">Professional Experience</h2>
+            
+            <div class="space-y-8">
+
+                 <!-- Work Experience 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500 transition hover:shadow-xl duration-300">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-bold text-gray-900">Research Assistant</h3>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">International Standard University (2024-2025)</span>
+                    </div>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-gray-700 ml-4">
+                        <li> Modeled and documented complex business and research workflows
+using systematic flowcharts and diagrams (e.g., DFDs), establishing a
+foundation for requirement analysis.</li>
+                        <li> Translated abstract project logic into clear, visual documentation(flowcharts, diagrams), ensuring clear communication of system architecture and data flow.</li>
+                    </ul>
+                </div>
+
+                
+                <!-- Work Experience 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500 transition hover:shadow-xl duration-300">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-bold text-gray-900">Support Class Instructor</h3>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">Data Solution 360 (Present)</span>
+                    </div>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-gray-700 ml-4">
+                        <li>Conducted training sessions on Data Science & Machine Learning concepts.</li>
+                        <li>Guided students in practical application of Python, SQL, and visualization tools.</li>
+                    </ul>
+                </div>
+
+                <!-- Work Experience 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500 transition hover:shadow-xl duration-300">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-xl font-bold text-gray-900">Annotator</h3>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">Product Sense (Present)</span>
+                    </div>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-gray-700 ml-4">
+                        <li>Annotated datasets to support AI and ML projects.</li>
+                        <li>Ensured high data quality and accuracy critical for model training.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Projects Section (UPDATED) -->
+        <section id="projects" class="mb-16">
+            <h2 class="section-header text-2xl font-bold text-gray-900">Selected Projects & Research</h2>
+            
+            <div class="space-y-8">
+                
+                <!-- Project 1: Deep Learning Detection (Brain Tumor) -->
+                <a href="https://github.com/Jannatulmawa20/Brain-Tumour" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Advanced Deep Learning Detection Techniques (Brain Tumor)</h3>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">AI / RESEARCH</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Developed a deep learning model for segmenting and object detection of Brain Tumor Subtypes.</p>
+                    <p class="text-sm text-blue-600 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Project on GitHub
+                    </p>
+                </a>
+                
+                <!-- Project 2: Ride Sharing Price Prediction -->
+                <a href="#" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Ride Sharing Price Prediction (ML)</h3>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">MACHINE LEARNING</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Built a regression model (Hist Gradient Boosting) to predict ride fares based on distance, time, weather, and location factors.</p>
+                    <p class="text-sm text-red-500 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Code / Notebook (Link not provided, using placeholder icon)
+                    </p>
+                </a>
+                
+                <!-- Project 3: Network Vulnerability Scanner (UPDATED LINK) -->
+                <a href="https://github.com/Jannatulmawa20/Nmap-Network-Scanner/blob/main/Nmap%20Network%20Scanner.ipynb" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Network Vulnerability Scanner</h3>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">CYBERSECURITY</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Developed a tool to scan networks for vulnerabilities and report security weaknesses (e.g., open ports, service versions).</p>
+                    <p class="text-sm text-yellow-700 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Notebook on GitHub
+                    </p>
+                </a>
+                
+                <!-- Project 4: Online Bookstore (Django) -->
+                <a href="#" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-indigo-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Online Bookstore (Django + PostgreSQL)</h3>
+                        <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">FULL-STACK WEB</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Designed a full-stack e-commerce system with secure user authentication, product management, and order processing.</p>
+                    <p class="text-sm text-red-500 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Code (Link not provided, using placeholder icon)
+                    </p>
+                </a>
+                
+                <!-- Project 5: Blood Bank Management System (UPDATED LINK) -->
+                <a href="https://github.com/Jannatulmawa20/Blood-Bank-Project" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Blood Bank Management System</h3>
+                        <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">WEB DEVELOPMENT</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Developed a management system using HTML, PHP, and Bootstrap for tracking blood inventory and donor details.</p>
+                    <p class="text-sm text-red-700 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Code on GitHub
+                    </p>
+                </a>
+
+                <!-- Project 6: HTML/CSS/JS Basics (UPDATED LINK) -->
+                <a href="https://github.com/Jannatulmawa20/Admission-form-Website-Calculator" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-pink-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Basic Web & Utility Tools</h3>
+                        <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-3 py-1 rounded-full">FRONT-END</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Collection of front-end projects including an Admission Form, simple **Website Layout, and a basic Calculator using HTML, CSS & JavaScript.</p>
+                    <p class="text-sm text-pink-700 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Code on GitHub
+                    </p>
+                </a>
+                
+                <!-- Project 7: Bookshop Entry (Java) (UPDATED LINK) -->
+                <a href="https://github.com/Jannatulmawa20/Bookshop-Entry-Project" target="_blank" class="block project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-orange-500">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-gray-900">Bookshop Entry Project</h3>
+                        <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">JAVA APPLICATION</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Implemented a desktop application in Java (OOP) for managing bookshop inventory and entry details.</p>
+                    <p class="text-sm text-orange-700 font-medium mt-3 flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                        View Code on GitHub
+                    </p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- Socials & Contact Section -->
+        <section id="contact" class="text-center py-12 bg-white rounded-xl shadow-lg">
+            <h2 class="section-header mx-auto w-fit text-2xl font-bold text-gray-900">Let's Connect</h2>
+            <p class="text-gray-600 mb-6">Find me on professional platforms and view my code repositories.</p>
+            
+            <div class="flex justify-center space-x-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jannatul-mawa-mukta-0bb1142a5/" target="_blank" class="flex items-center space-x-2 p-3 rounded-full bg-red-500 text-white hover:bg-red-600 transition duration-300 shadow-md">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    <span class="hidden sm:inline-block font-medium">LinkedIn</span>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/Jannatulmawa20" target="_blank" class="flex items-center space-x-2 p-3 rounded-full bg-gray-800 text-white hover:bg-gray-900 transition duration-300 shadow-md">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                    <span class="hidden sm:inline-block font-medium">GitHub</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:mawamukta1234@gmail.com" class="flex items-center space-x-2 p-3 rounded-full bg-red-500 text-white hover:bg-red-600 transition duration-300 shadow-md">
+                    <i data-lucide="send" class="w-6 h-6"></i>
+                    <span class="hidden sm:inline-block font-medium">Email</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Jannatul Mawa. Built with HTML and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
